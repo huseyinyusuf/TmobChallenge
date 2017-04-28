@@ -25,9 +25,6 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func searchButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "PlacesPageSague", sender: self)
-    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         }

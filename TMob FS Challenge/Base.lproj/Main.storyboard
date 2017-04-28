@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6M3-C5-tc7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,22 +23,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ok-4X-HWy">
-                                <rect key="frame" x="41" y="259" width="293" height="150"/>
+                                <rect key="frame" x="41" y="257" width="293" height="154"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3i-kd-yyN">
-                                        <rect key="frame" x="8" y="65" width="275" height="30"/>
+                                        <rect key="frame" x="8" y="67" width="275" height="32"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Area Type (Exp. Cafe, Bar)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mtx-g2-Wht">
-                                        <rect key="frame" x="8" y="20" width="275" height="30"/>
+                                        <rect key="frame" x="8" y="20" width="275" height="32"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKf-3G-dMc">
-                                        <rect key="frame" x="10" y="110" width="273" height="32"/>
+                                        <rect key="frame" x="8" y="114" width="275" height="32"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUz-yq-Foo">
                                                 <rect key="frame" x="109.5" y="6" width="54" height="21"/>
@@ -63,7 +63,7 @@
                                         <constraints>
                                             <constraint firstItem="aUz-yq-Foo" firstAttribute="centerY" secondItem="eKf-3G-dMc" secondAttribute="centerY" id="4Lp-Gt-tza"/>
                                             <constraint firstItem="lss-v6-Bbd" firstAttribute="bottom" secondItem="eKf-3G-dMc" secondAttribute="bottomMargin" id="K2E-jd-Tqd"/>
-                                            <constraint firstItem="aUz-yq-Foo" firstAttribute="centerX" secondItem="eKf-3G-dMc" secondAttribute="centerX" id="VEw-dD-kqR"/>
+                                            <constraint firstItem="aUz-yq-Foo" firstAttribute="centerX" secondItem="eKf-3G-dMc" secondAttribute="centerX" constant="-1" id="VEw-dD-kqR"/>
                                             <constraint firstItem="lss-v6-Bbd" firstAttribute="leading" secondItem="eKf-3G-dMc" secondAttribute="leading" constant="8" id="hX4-jt-RtM"/>
                                             <constraint firstItem="lss-v6-Bbd" firstAttribute="top" secondItem="eKf-3G-dMc" secondAttribute="topMargin" id="l45-fx-22c"/>
                                         </constraints>
@@ -78,12 +78,16 @@
                                     <constraint firstAttribute="trailing" secondItem="B3i-kd-yyN" secondAttribute="trailing" constant="10" id="7u9-hX-CSx"/>
                                     <constraint firstItem="B3i-kd-yyN" firstAttribute="top" secondItem="Mtx-g2-Wht" secondAttribute="bottom" constant="15" id="9BS-ih-m8Q"/>
                                     <constraint firstItem="eKf-3G-dMc" firstAttribute="top" secondItem="B3i-kd-yyN" secondAttribute="bottom" constant="15" id="Jd8-Aj-N8I"/>
+                                    <constraint firstItem="eKf-3G-dMc" firstAttribute="height" secondItem="B3i-kd-yyN" secondAttribute="height" id="M50-9N-JVp"/>
                                     <constraint firstItem="B3i-kd-yyN" firstAttribute="trailing" secondItem="Mtx-g2-Wht" secondAttribute="trailing" id="MQW-eW-Ltd"/>
+                                    <constraint firstItem="eKf-3G-dMc" firstAttribute="height" secondItem="Mtx-g2-Wht" secondAttribute="height" id="Vzg-PP-dXM"/>
                                     <constraint firstItem="B3i-kd-yyN" firstAttribute="leading" secondItem="Mtx-g2-Wht" secondAttribute="leading" id="YW3-ZP-4rv"/>
+                                    <constraint firstItem="eKf-3G-dMc" firstAttribute="width" secondItem="Mtx-g2-Wht" secondAttribute="width" id="c9x-lJ-WQu"/>
                                     <constraint firstItem="Mtx-g2-Wht" firstAttribute="leading" secondItem="4ok-4X-HWy" secondAttribute="leading" constant="8" id="cMv-Gw-ep5"/>
                                     <constraint firstItem="Mtx-g2-Wht" firstAttribute="top" secondItem="4ok-4X-HWy" secondAttribute="top" constant="20" id="hgi-Dh-A7d"/>
                                     <constraint firstAttribute="trailing" secondItem="Mtx-g2-Wht" secondAttribute="trailing" constant="10" id="oFm-EY-9cX"/>
-                                    <constraint firstItem="eKf-3G-dMc" firstAttribute="leading" secondItem="4ok-4X-HWy" secondAttribute="leading" constant="10" id="ppE-PN-9cZ"/>
+                                    <constraint firstItem="eKf-3G-dMc" firstAttribute="leading" secondItem="4ok-4X-HWy" secondAttribute="leading" constant="8" id="ppE-PN-9cZ"/>
+                                    <constraint firstItem="eKf-3G-dMc" firstAttribute="width" secondItem="B3i-kd-yyN" secondAttribute="width" id="wVw-IA-Kcj"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -98,73 +102,28 @@
                         <outlet property="areaTextField" destination="Mtx-g2-Wht" id="KpY-dn-25O"/>
                         <outlet property="locationTextField" destination="B3i-kd-yyN" id="8CL-hu-Wvs"/>
                         <outlet property="searchButton" destination="eKf-3G-dMc" id="uln-Mv-Fd4"/>
-                        <segue destination="K5N-72-E13" kind="show" identifier="PlacesPageSague" id="gWD-GI-HLv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="5Si-cB-CHH">
                     <connections>
                         <action selector="searchButtonPressed:" destination="BYZ-38-t0r" id="GwH-mq-45s"/>
+                        <segue destination="hYO-Dp-s5G" kind="show" id="QNb-T7-N8s"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
         </scene>
-        <!--Places View Controller-->
-        <scene sceneID="iKh-MG-xeJ">
+        <!--Places-->
+        <scene sceneID="9hc-w6-NEf">
             <objects>
-                <viewController id="K5N-72-E13" customClass="PlacesViewController" customModule="TMob_FS_Challenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LKc-kO-Qj0"/>
-                        <viewControllerLayoutGuide type="bottom" id="kos-fG-ZKT"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1DD-NO-lSn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oKc-Rv-gfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Places" id="hYO-Dp-s5G" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nc-Xu-hIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785" y="31"/>
-        </scene>
-        <!--Splash Screen View Controller-->
-        <scene sceneID="f4f-xR-1Js">
-            <objects>
-                <viewController id="6M3-C5-tc7" customClass="SplashScreenViewController" customModule="TMob_FS_Challenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OyQ-Ju-t9S"/>
-                        <viewControllerLayoutGuide type="bottom" id="rfk-cm-nPX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="JVq-x4-Nzu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="doU-Aq-YIM">
-                                <rect key="frame" x="137" y="175" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="2t7-Pa-3gv"/>
-                                    <constraint firstAttribute="width" constant="100" id="fmS-gH-0QF"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="doU-Aq-YIM" firstAttribute="centerX" secondItem="JVq-x4-Nzu" secondAttribute="centerX" id="P2j-Lx-3Cc"/>
-                            <constraint firstItem="doU-Aq-YIM" firstAttribute="centerY" secondItem="JVq-x4-Nzu" secondAttribute="centerY" constant="-108.5" id="QHj-L4-R3p"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="mainPageSague" id="elJ-lh-4RL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cnu-VK-0b0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-752.79999999999995" y="44.527736131934034"/>
+            <point key="canvasLocation" x="661" y="0.0"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="106" height="106"/>
         <image name="Search_Icon" width="18" height="18"/>
     </resources>
 </document>
