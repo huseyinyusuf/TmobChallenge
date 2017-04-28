@@ -8,11 +8,18 @@
 
 import UIKit
 
-class PlacesViewController: UIViewController {
+class PlacesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var placesTableView: UITableView!
+    var fruits = ["Apple", "Apricot", "Banana", "Blueberry", "Cantaloupe", "Cherry",
+                  "Clementine", "Coconut", "Cranberry", "Fig", "Grape", "Grapefruit",
+                  "Kiwi fruit", "Lemon", "Lime", "Lychee", "Mandarine", "Mango",
+                  "Melon", "Nectarine", "Olive", "Orange", "Papaya", "Peach",
+                  "Pear", "Pineapple", "Raspberry", "Strawberry"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        placesTableView.delegate=self
+        placesTableView.dataSource=self
         // Do any additional setup after loading the view.
     }
 
@@ -20,16 +27,17 @@ class PlacesViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return fruits.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Place", for: indexPath) as! PlaceTableViewCell
+        cell.placeName?.text = fruits[indexPath.row]
+        return cell
+    }
 
 }

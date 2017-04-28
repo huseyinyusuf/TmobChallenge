@@ -15,6 +15,7 @@
 		1D4F7F221EB3CCBE00F58C8A /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4F7F211EB3CCBE00F58C8A /* PlacesViewController.swift */; };
 		1D4F7F2A1EB3D1F500F58C8A /* Places.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4F7F291EB3D1F500F58C8A /* Places.storyboard */; };
 		1D4F7F2C1EB3D23900F58C8A /* launchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4F7F2B1EB3D23900F58C8A /* launchScreen.storyboard */; };
+		1D4F7F331EB3DF8000F58C8A /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4F7F321EB3DF8000F58C8A /* PlaceTableViewCell.swift */; };
 		1DD4E9B21EB3AA11003D75BE /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD4E9B11EB3AA11003D75BE /* SplashScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		1D4F7F211EB3CCBE00F58C8A /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		1D4F7F291EB3D1F500F58C8A /* Places.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Places.storyboard; sourceTree = "<group>"; };
 		1D4F7F2B1EB3D23900F58C8A /* launchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = launchScreen.storyboard; sourceTree = "<group>"; };
+		1D4F7F321EB3DF8000F58C8A /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		1DD4E9B11EB3AA11003D75BE /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,10 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				1D1F8D781EB3A16B00AD82F9 /* AppDelegate.swift */,
+				1D4F7F311EB3DF5100F58C8A /* TalbeViewCells */,
+				1D4F7F2E1EB3DEE100F58C8A /* Modals */,
 				1DD4E9B01EB3A9D4003D75BE /* Controllers */,
-				1D1F8D7C1EB3A16B00AD82F9 /* Main.storyboard */,
-				1D4F7F291EB3D1F500F58C8A /* Places.storyboard */,
-				1D4F7F2B1EB3D23900F58C8A /* launchScreen.storyboard */,
+				1D4F7F2D1EB3D7AA00F58C8A /* Storyboards */,
 				1D1F8D7F1EB3A16B00AD82F9 /* Assets.xcassets */,
 				1D1F8D841EB3A16B00AD82F9 /* Info.plist */,
 			);
@@ -101,6 +103,31 @@
 				1D1F8D8F1EB3A16B00AD82F9 /* Info.plist */,
 			);
 			path = "TMob FS ChallengeTests";
+			sourceTree = "<group>";
+		};
+		1D4F7F2D1EB3D7AA00F58C8A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1D1F8D7C1EB3A16B00AD82F9 /* Main.storyboard */,
+				1D4F7F291EB3D1F500F58C8A /* Places.storyboard */,
+				1D4F7F2B1EB3D23900F58C8A /* launchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		1D4F7F2E1EB3DEE100F58C8A /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modals;
+			sourceTree = "<group>";
+		};
+		1D4F7F311EB3DF5100F58C8A /* TalbeViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1D4F7F321EB3DF8000F58C8A /* PlaceTableViewCell.swift */,
+			);
+			name = TalbeViewCells;
 			sourceTree = "<group>";
 		};
 		1DD4E9B01EB3A9D4003D75BE /* Controllers */ = {
@@ -222,6 +249,7 @@
 				1D1F8D7B1EB3A16B00AD82F9 /* MainPageViewController.swift in Sources */,
 				1D1F8D791EB3A16B00AD82F9 /* AppDelegate.swift in Sources */,
 				1DD4E9B21EB3AA11003D75BE /* SplashScreenViewController.swift in Sources */,
+				1D4F7F331EB3DF8000F58C8A /* PlaceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
