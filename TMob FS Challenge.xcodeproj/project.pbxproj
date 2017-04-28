@@ -11,8 +11,8 @@
 		1D1F8D7B1EB3A16B00AD82F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1F8D7A1EB3A16B00AD82F9 /* ViewController.swift */; };
 		1D1F8D7E1EB3A16B00AD82F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1F8D7C1EB3A16B00AD82F9 /* Main.storyboard */; };
 		1D1F8D801EB3A16B00AD82F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D1F8D7F1EB3A16B00AD82F9 /* Assets.xcassets */; };
-		1D1F8D831EB3A16B00AD82F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1F8D811EB3A16B00AD82F9 /* LaunchScreen.storyboard */; };
 		1D1F8D8E1EB3A16B00AD82F9 /* TMob_FS_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1F8D8D1EB3A16B00AD82F9 /* TMob_FS_ChallengeTests.swift */; };
+		1DD4E9B21EB3AA11003D75BE /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD4E9B11EB3AA11003D75BE /* SplashScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +31,11 @@
 		1D1F8D7A1EB3A16B00AD82F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1D1F8D7D1EB3A16B00AD82F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D1F8D7F1EB3A16B00AD82F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1D1F8D821EB3A16B00AD82F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D1F8D841EB3A16B00AD82F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D1F8D891EB3A16B00AD82F9 /* TMob FS ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TMob FS ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D1F8D8D1EB3A16B00AD82F9 /* TMob_FS_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMob_FS_ChallengeTests.swift; sourceTree = "<group>"; };
 		1D1F8D8F1EB3A16B00AD82F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DD4E9B11EB3AA11003D75BE /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +77,9 @@
 		1D1F8D771EB3A16B00AD82F9 /* TMob FS Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				1D1F8D781EB3A16B00AD82F9 /* AppDelegate.swift */,
-				1D1F8D7A1EB3A16B00AD82F9 /* ViewController.swift */,
+				1DD4E9B01EB3A9D4003D75BE /* Swift Files */,
 				1D1F8D7C1EB3A16B00AD82F9 /* Main.storyboard */,
 				1D1F8D7F1EB3A16B00AD82F9 /* Assets.xcassets */,
-				1D1F8D811EB3A16B00AD82F9 /* LaunchScreen.storyboard */,
 				1D1F8D841EB3A16B00AD82F9 /* Info.plist */,
 			);
 			path = "TMob FS Challenge";
@@ -94,6 +92,16 @@
 				1D1F8D8F1EB3A16B00AD82F9 /* Info.plist */,
 			);
 			path = "TMob FS ChallengeTests";
+			sourceTree = "<group>";
+		};
+		1DD4E9B01EB3A9D4003D75BE /* Swift Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D1F8D7A1EB3A16B00AD82F9 /* ViewController.swift */,
+				1D1F8D781EB3A16B00AD82F9 /* AppDelegate.swift */,
+				1DD4E9B11EB3AA11003D75BE /* SplashScreenViewController.swift */,
+			);
+			name = "Swift Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +188,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D1F8D831EB3A16B00AD82F9 /* LaunchScreen.storyboard in Resources */,
 				1D1F8D801EB3A16B00AD82F9 /* Assets.xcassets in Resources */,
 				1D1F8D7E1EB3A16B00AD82F9 /* Main.storyboard in Resources */,
 			);
@@ -202,6 +209,7 @@
 			files = (
 				1D1F8D7B1EB3A16B00AD82F9 /* ViewController.swift in Sources */,
 				1D1F8D791EB3A16B00AD82F9 /* AppDelegate.swift in Sources */,
+				1DD4E9B21EB3AA11003D75BE /* SplashScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,14 +238,6 @@
 				1D1F8D7D1EB3A16B00AD82F9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1D1F8D811EB3A16B00AD82F9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D1F8D821EB3A16B00AD82F9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -342,6 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7U7U4GW87C;
 				INFOPLIST_FILE = "TMob FS Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Huseyin-Yusuf.TMob-FS-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7U7U4GW87C;
 				INFOPLIST_FILE = "TMob FS Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Huseyin-Yusuf.TMob-FS-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +411,7 @@
 				1D1F8D941EB3A16B00AD82F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D1F8D951EB3A16B00AD82F9 /* Build configuration list for PBXNativeTarget "TMob FS ChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +420,7 @@
 				1D1F8D971EB3A16B00AD82F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
