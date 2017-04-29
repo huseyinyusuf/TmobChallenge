@@ -7,20 +7,38 @@
 //
 
 import UIKit
-
+import CoreLocation
 class MainPageViewController: UIViewController,UITextFieldDelegate{
 
     @IBOutlet weak var searchButton: UIView!
     @IBOutlet weak var areaTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
+    
+    let locationManager=CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         searchButton.layer.cornerRadius=5
         areaTextField.delegate=self
         locationTextField.delegate=self
+        getLocation()
         
     }
-
+    public func getLocation(){
+        self.locationManager.requestWhenInUseAuthorization()
+        var currentLocation = CLLocation()
+        
+        if( CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedWhenInUse ||
+            CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedAlways){
+            
+            currentLocation = locationManager.location!
+            let lat=currentLocation.coordinate.latitude
+            let long=currentLocation.coordinate.longitude
+            print(lat)
+            print(long)
+            
+        }
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
