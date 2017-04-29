@@ -109,7 +109,7 @@
                 <tapGestureRecognizer id="5Si-cB-CHH">
                     <connections>
                         <action selector="searchButtonPressed:" destination="BYZ-38-t0r" id="GwH-mq-45s"/>
-                        <segue destination="hYO-Dp-s5G" kind="show" id="QNb-T7-N8s"/>
+                        <segue destination="hYO-Dp-s5G" kind="show" identifier="PlacesSague" id="NPc-Vp-9cn"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

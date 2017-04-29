@@ -11,4 +11,5 @@ import UIKit
 class PlaceTableViewCell: UITableViewCell {
 
     @IBOutlet weak var placeName: UILabel!
+    @IBOutlet weak var placeAdress: UILabel!
 }

@@ -19,6 +19,7 @@
 		1D4F7F331EB3DF8000F58C8A /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4F7F321EB3DF8000F58C8A /* PlaceTableViewCell.swift */; };
 		1D4F7F351EB3E36300F58C8A /* PlaceDetailPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4F7F341EB3E36300F58C8A /* PlaceDetailPopUp.storyboard */; };
 		1D4F7F371EB3E7D400F58C8A /* PlaceDetailPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4F7F361EB3E7D400F58C8A /* PlaceDetailPopUpViewController.swift */; };
+		1D60C76D1EB4DE7B004512A2 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D60C76C1EB4DE7B004512A2 /* Venue.swift */; };
 		1DD4E9B21EB3AA11003D75BE /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD4E9B11EB3AA11003D75BE /* SplashScreenViewController.swift */; };
 		368E89CED018706B9603556C /* Pods_TMob_FS_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1C8D20FF912B0C4D8B3488 /* Pods_TMob_FS_ChallengeTests.framework */; };
 		EA87933FA019057EB8CFFD99 /* Pods_TMob_FS_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3031723BA9A66DF6774E9A51 /* Pods_TMob_FS_Challenge.framework */; };
@@ -53,6 +54,7 @@
 		1D4F7F321EB3DF8000F58C8A /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		1D4F7F341EB3E36300F58C8A /* PlaceDetailPopUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlaceDetailPopUp.storyboard; sourceTree = "<group>"; };
 		1D4F7F361EB3E7D400F58C8A /* PlaceDetailPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailPopUpViewController.swift; sourceTree = "<group>"; };
+		1D60C76C1EB4DE7B004512A2 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		1DD4E9B11EB3AA11003D75BE /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		1FB40F8EFF2C5B4DC814B4E4 /* Pods-TMob FS Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMob FS Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMob FS Challenge/Pods-TMob FS Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		3031723BA9A66DF6774E9A51 /* Pods_TMob_FS_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMob_FS_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +139,7 @@
 		1D4F7F2E1EB3DEE100F58C8A /* Modals */ = {
 			isa = PBXGroup;
 			children = (
+				1D60C76C1EB4DE7B004512A2 /* Venue.swift */,
 			);
 			name = Modals;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D46F40F1EB4A4FD008652B4 /* FSHelper.swift in Sources */,
+				1D60C76D1EB4DE7B004512A2 /* Venue.swift in Sources */,
 				1D4F7F221EB3CCBE00F58C8A /* PlacesViewController.swift in Sources */,
 				1D1F8D7B1EB3A16B00AD82F9 /* MainPageViewController.swift in Sources */,
 				1D1F8D791EB3A16B00AD82F9 /* AppDelegate.swift in Sources */,

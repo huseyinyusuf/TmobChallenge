@@ -8,12 +8,13 @@
 
 import UIKit
 import CoreLocation
+let FSH=FSHelper()
 class MainPageViewController: UIViewController,UITextFieldDelegate{
 
     @IBOutlet weak var searchButton: UIView!
     @IBOutlet weak var areaTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
-    
+    var places=[Venue]()
     let locationManager=CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,7 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
         areaTextField.delegate=self
         locationTextField.delegate=self
         getLocation()
-        let FSH=FSHelper()
-        FSH.search(location:locationManager.location!)
+
         
     }
     public func getLocation(){
@@ -33,14 +33,27 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
             CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedAlways){
             
             currentLocation = locationManager.location!
-            let lat=currentLocation.coordinate.latitude
-            let long=currentLocation.coordinate.longitude
-            print(lat)
-            print(long)
+//            let lat=currentLocation.coordinate.latitude
+//            let long=currentLocation.coordinate.longitude
+//            print(lat)
+//            print(long)
             
         }
         
     }
+//    @IBAction func SearchButtonPressed(_ sender: UITapGestureRecognizer) {
+//        
+//    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "PlacesSague"{
+//            
+//            if let nextViewController = segue.destination as? PlacesViewController{
+//                    nextViewController.places=self.places
+//                }
+//        }
+//    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
