@@ -12,6 +12,7 @@
 		1D1F8D7E1EB3A16B00AD82F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D1F8D7C1EB3A16B00AD82F9 /* Main.storyboard */; };
 		1D1F8D801EB3A16B00AD82F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D1F8D7F1EB3A16B00AD82F9 /* Assets.xcassets */; };
 		1D1F8D8E1EB3A16B00AD82F9 /* TMob_FS_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1F8D8D1EB3A16B00AD82F9 /* TMob_FS_ChallengeTests.swift */; };
+		1D46F40F1EB4A4FD008652B4 /* FSHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D46F40E1EB4A4FD008652B4 /* FSHelper.swift */; };
 		1D4F7F221EB3CCBE00F58C8A /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4F7F211EB3CCBE00F58C8A /* PlacesViewController.swift */; };
 		1D4F7F2A1EB3D1F500F58C8A /* Places.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4F7F291EB3D1F500F58C8A /* Places.storyboard */; };
 		1D4F7F2C1EB3D23900F58C8A /* launchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4F7F2B1EB3D23900F58C8A /* launchScreen.storyboard */; };
@@ -19,6 +20,8 @@
 		1D4F7F351EB3E36300F58C8A /* PlaceDetailPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4F7F341EB3E36300F58C8A /* PlaceDetailPopUp.storyboard */; };
 		1D4F7F371EB3E7D400F58C8A /* PlaceDetailPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4F7F361EB3E7D400F58C8A /* PlaceDetailPopUpViewController.swift */; };
 		1DD4E9B21EB3AA11003D75BE /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD4E9B11EB3AA11003D75BE /* SplashScreenViewController.swift */; };
+		368E89CED018706B9603556C /* Pods_TMob_FS_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1C8D20FF912B0C4D8B3488 /* Pods_TMob_FS_ChallengeTests.framework */; };
+		EA87933FA019057EB8CFFD99 /* Pods_TMob_FS_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3031723BA9A66DF6774E9A51 /* Pods_TMob_FS_Challenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A1C8D20FF912B0C4D8B3488 /* Pods_TMob_FS_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMob_FS_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		111699CB48DABBCA06AF5459 /* Pods-TMob FS Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMob FS Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMob FS Challenge/Pods-TMob FS Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		1D1F8D751EB3A16B00AD82F9 /* TMob FS Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMob FS Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D1F8D781EB3A16B00AD82F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D1F8D7A1EB3A16B00AD82F9 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +46,7 @@
 		1D1F8D891EB3A16B00AD82F9 /* TMob FS ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TMob FS ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D1F8D8D1EB3A16B00AD82F9 /* TMob_FS_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMob_FS_ChallengeTests.swift; sourceTree = "<group>"; };
 		1D1F8D8F1EB3A16B00AD82F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D46F40E1EB4A4FD008652B4 /* FSHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSHelper.swift; sourceTree = "<group>"; };
 		1D4F7F211EB3CCBE00F58C8A /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		1D4F7F291EB3D1F500F58C8A /* Places.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Places.storyboard; sourceTree = "<group>"; };
 		1D4F7F2B1EB3D23900F58C8A /* launchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = launchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +54,10 @@
 		1D4F7F341EB3E36300F58C8A /* PlaceDetailPopUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlaceDetailPopUp.storyboard; sourceTree = "<group>"; };
 		1D4F7F361EB3E7D400F58C8A /* PlaceDetailPopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailPopUpViewController.swift; sourceTree = "<group>"; };
 		1DD4E9B11EB3AA11003D75BE /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		1FB40F8EFF2C5B4DC814B4E4 /* Pods-TMob FS Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMob FS Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMob FS Challenge/Pods-TMob FS Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		3031723BA9A66DF6774E9A51 /* Pods_TMob_FS_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMob_FS_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F298CF61734326DD2D0C171 /* Pods-TMob FS ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMob FS ChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMob FS ChallengeTests/Pods-TMob FS ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A636CA7C36A762CC38E958C7 /* Pods-TMob FS ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMob FS ChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMob FS ChallengeTests/Pods-TMob FS ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA87933FA019057EB8CFFD99 /* Pods_TMob_FS_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368E89CED018706B9603556C /* Pods_TMob_FS_ChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +86,8 @@
 				1D1F8D771EB3A16B00AD82F9 /* TMob FS Challenge */,
 				1D1F8D8C1EB3A16B00AD82F9 /* TMob FS ChallengeTests */,
 				1D1F8D761EB3A16B00AD82F9 /* Products */,
+				FF0B348BCA6CA5DCEFAD1530 /* Pods */,
+				E1E03AAFF379DFE30C18CAA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,8 +156,29 @@
 				1DD4E9B11EB3AA11003D75BE /* SplashScreenViewController.swift */,
 				1D4F7F211EB3CCBE00F58C8A /* PlacesViewController.swift */,
 				1D4F7F361EB3E7D400F58C8A /* PlaceDetailPopUpViewController.swift */,
+				1D46F40E1EB4A4FD008652B4 /* FSHelper.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E1E03AAFF379DFE30C18CAA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3031723BA9A66DF6774E9A51 /* Pods_TMob_FS_Challenge.framework */,
+				0A1C8D20FF912B0C4D8B3488 /* Pods_TMob_FS_ChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF0B348BCA6CA5DCEFAD1530 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FB40F8EFF2C5B4DC814B4E4 /* Pods-TMob FS Challenge.debug.xcconfig */,
+				111699CB48DABBCA06AF5459 /* Pods-TMob FS Challenge.release.xcconfig */,
+				A636CA7C36A762CC38E958C7 /* Pods-TMob FS ChallengeTests.debug.xcconfig */,
+				9F298CF61734326DD2D0C171 /* Pods-TMob FS ChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D1F8D921EB3A16B00AD82F9 /* Build configuration list for PBXNativeTarget "TMob FS Challenge" */;
 			buildPhases = (
+				87A125FFA7DA9E63168BEE7B /* [CP] Check Pods Manifest.lock */,
 				1D1F8D711EB3A16B00AD82F9 /* Sources */,
 				1D1F8D721EB3A16B00AD82F9 /* Frameworks */,
 				1D1F8D731EB3A16B00AD82F9 /* Resources */,
+				233B81E10C1BAA7B5FF414A8 /* [CP] Embed Pods Frameworks */,
+				3D1D36B6D48F7F5062370B22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D1F8D951EB3A16B00AD82F9 /* Build configuration list for PBXNativeTarget "TMob FS ChallengeTests" */;
 			buildPhases = (
+				CF93BB99D38C7A05731497FC /* [CP] Check Pods Manifest.lock */,
 				1D1F8D851EB3A16B00AD82F9 /* Sources */,
 				1D1F8D861EB3A16B00AD82F9 /* Frameworks */,
 				1D1F8D871EB3A16B00AD82F9 /* Resources */,
+				FBE17E78CED340447FB7DD3E /* [CP] Embed Pods Frameworks */,
+				A6B3881B7ACF36C23F2AE789 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,11 +288,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		233B81E10C1BAA7B5FF414A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMob FS Challenge/Pods-TMob FS Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D1D36B6D48F7F5062370B22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMob FS Challenge/Pods-TMob FS Challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87A125FFA7DA9E63168BEE7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B3881B7ACF36C23F2AE789 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMob FS ChallengeTests/Pods-TMob FS ChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF93BB99D38C7A05731497FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBE17E78CED340447FB7DD3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMob FS ChallengeTests/Pods-TMob FS ChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D1F8D711EB3A16B00AD82F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D46F40F1EB4A4FD008652B4 /* FSHelper.swift in Sources */,
 				1D4F7F221EB3CCBE00F58C8A /* PlacesViewController.swift in Sources */,
 				1D1F8D7B1EB3A16B00AD82F9 /* MainPageViewController.swift in Sources */,
 				1D1F8D791EB3A16B00AD82F9 /* AppDelegate.swift in Sources */,
@@ -386,6 +521,7 @@
 		};
 		1D1F8D931EB3A16B00AD82F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB40F8EFF2C5B4DC814B4E4 /* Pods-TMob FS Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7U7U4GW87C;
@@ -400,6 +536,7 @@
 		};
 		1D1F8D941EB3A16B00AD82F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 111699CB48DABBCA06AF5459 /* Pods-TMob FS Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7U7U4GW87C;
@@ -414,6 +551,7 @@
 		};
 		1D1F8D961EB3A16B00AD82F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A636CA7C36A762CC38E958C7 /* Pods-TMob FS ChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -428,6 +566,7 @@
 		};
 		1D1F8D971EB3A16B00AD82F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F298CF61734326DD2D0C171 /* Pods-TMob FS ChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
