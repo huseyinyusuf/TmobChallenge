@@ -12,4 +12,5 @@ class PlaceTableViewCell: UITableViewCell {
 
     @IBOutlet weak var placeName: UILabel!
     @IBOutlet weak var placeAdress: UILabel!
+    @IBOutlet weak var country: UILabel!
 }

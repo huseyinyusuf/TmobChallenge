@@ -56,15 +56,20 @@ class FSHelper{
                             
                             if  let location = venue["location"] as? [String: AnyObject]
                             {
-                                if let formattedAddress = location["formattedAddress"] as? [String]
+                                if let address = location["address"] as? String
                                 {
-                                    place.adress = formattedAddress.joined(separator: " ")
+                                    place.adress = address
+                                }
+                                if let country = location["country"] as? String
+                                {
+                                    place.country = country
                                 }
                             }
                             if let id = venue["id"] as? String
                             {
                                 place.id = id
                             }
+                            
 //                            print(response)
                             print(place.name)
 //                            print(place.adress)

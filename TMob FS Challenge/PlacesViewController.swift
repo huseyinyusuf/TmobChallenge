@@ -53,6 +53,7 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "Place", for: indexPath) as! PlaceTableViewCell
         cell.placeName.text = places[indexPath.row].name
         cell.placeAdress.text = places[indexPath.row].adress
+        cell.country.text = places[indexPath.row].country
         return cell
     }
 
