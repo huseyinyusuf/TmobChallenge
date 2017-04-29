@@ -12,7 +12,7 @@ let FSH=FSHelper()
 class MainPageViewController: UIViewController,UITextFieldDelegate{
 
     @IBOutlet weak var searchButton: UIView!
-    @IBOutlet weak var areaTextField: UITextField!
+    @IBOutlet weak var typeTextField: UITextField!
     @IBOutlet weak var locationTextField: UITextField!
     var places=[Venue]()
     var currentLocation=CLLocation()
@@ -20,7 +20,7 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         searchButton.layer.cornerRadius=5
-        areaTextField.delegate=self
+        typeTextField.delegate=self
         locationTextField.delegate=self
         getLocation()
     }
@@ -40,7 +40,7 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
     }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "PlacesSague"{
-            if (areaTextField.text?.characters.count)! >= 3{
+            if (typeTextField.text?.characters.count)! >= 3{
                 return true
             }else{
                 popAlertDialog()
@@ -53,8 +53,7 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
         if segue.identifier == "PlacesSague"{
             
             if let nextViewController = segue.destination as? PlacesViewController{
-                if (areaTextField.text?.characters.count)! >= 3{
-                    nextViewController.typeInput=areaTextField.text!
+                    nextViewController.typeInput=typeTextField.text!
                     if(locationTextField.text?.characters.count == 0){
                         nextViewController.locationInput = "empty"
                     }else{
@@ -62,8 +61,6 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
                     }
                 }else{
                     popAlertDialog()
-                }
-                
                 }
         }
     }
@@ -79,7 +76,14 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
         }))
         self.present(alert, animated: true, completion: nil)
     }
-    
+    /*func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let set = NSCharacterSet(charactersIn: "ABCDEFGHIJKLMONPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ").inverted
+        let stringSet : String = string as String
+        return stringSet.rangeOfCharacter(from: set.inverted, options: String.CompareOptions.caseInsensitive) == nil
+        
+    }
+    */
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

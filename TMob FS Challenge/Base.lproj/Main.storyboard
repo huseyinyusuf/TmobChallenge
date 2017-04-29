@@ -100,15 +100,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Main Page" id="Hfl-bx-xZ9"/>
                     <connections>
-                        <outlet property="areaTextField" destination="Mtx-g2-Wht" id="KpY-dn-25O"/>
                         <outlet property="locationTextField" destination="B3i-kd-yyN" id="8CL-hu-Wvs"/>
                         <outlet property="searchButton" destination="eKf-3G-dMc" id="uln-Mv-Fd4"/>
+                        <outlet property="typeTextField" destination="Mtx-g2-Wht" id="0VU-BA-Y1B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="5Si-cB-CHH">
                     <connections>
-                        <action selector="searchButtonPressed:" destination="BYZ-38-t0r" id="GwH-mq-45s"/>
                         <segue destination="hYO-Dp-s5G" kind="show" identifier="PlacesSague" id="tS5-Ly-CLh"/>
                     </connections>
                 </tapGestureRecognizer>
