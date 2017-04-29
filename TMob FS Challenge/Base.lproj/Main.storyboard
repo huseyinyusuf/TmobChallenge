@@ -29,13 +29,13 @@
                                         <rect key="frame" x="8" y="67" width="275" height="32"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Area Type (Exp. Cafe, Bar)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mtx-g2-Wht">
                                         <rect key="frame" x="8" y="20" width="275" height="32"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKf-3G-dMc">
                                         <rect key="frame" x="8" y="114" width="275" height="32"/>
@@ -109,7 +109,7 @@
                 <tapGestureRecognizer id="5Si-cB-CHH">
                     <connections>
                         <action selector="searchButtonPressed:" destination="BYZ-38-t0r" id="GwH-mq-45s"/>
-                        <segue destination="hYO-Dp-s5G" kind="show" identifier="PlacesSague" id="NPc-Vp-9cn"/>
+                        <segue destination="hYO-Dp-s5G" kind="show" identifier="PlacesSague" id="tS5-Ly-CLh"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

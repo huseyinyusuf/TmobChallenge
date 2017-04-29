@@ -26,12 +26,17 @@ class FSHelper{
         self.session=Session.sharedSession()
         print("Session Created!")
     }
-    func search(location:CLLocation,getPlaces: @escaping (_ array: [Venue])-> Void){
+    func search(type:String,location:String,getPlaces: @escaping (_ array: [Venue])-> Void){
         var places=[Venue]()
         if let session = self.session
         {
-            var parameters = [Parameter.query:"food"]
-            parameters += location.parameters()
+            var locationmanager=CLLocationManager()
+            var parameters = [Parameter.query:type]
+            if location=="empty"{
+                parameters += locationmanager.location?.parameters()
+            }else{
+                parameters += [Parameter.near:location]
+            }
             parameters += [Parameter.categoryId: "4bf58dd8d48988d1e0931735"]
             parameters += [Parameter.radius: "10000"]
             parameters += [Parameter.limit: "15"]

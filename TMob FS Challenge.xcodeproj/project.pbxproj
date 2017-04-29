@@ -156,8 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				1D1F8D7A1EB3A16B00AD82F9 /* MainPageViewController.swift */,
-				1DD4E9B11EB3AA11003D75BE /* SplashScreenViewController.swift */,
 				1D4F7F211EB3CCBE00F58C8A /* PlacesViewController.swift */,
+				1DD4E9B11EB3AA11003D75BE /* SplashScreenViewController.swift */,
 				1D4F7F361EB3E7D400F58C8A /* PlaceDetailPopUpViewController.swift */,
 				1D46F40E1EB4A4FD008652B4 /* FSHelper.swift */,
 			);

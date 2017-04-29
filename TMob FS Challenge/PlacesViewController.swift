@@ -12,7 +12,10 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
 
     @IBOutlet weak var placesTableView: UITableView!
     var places=[Venue]()
+    var typeInput=""
+    var locationInput=""
     let locationManager=CLLocationManager()
+    var currentlocation=CLLocation()
     var fruits = ["Apple", "Apricot", "Banana", "Blueberry", "Cantaloupe", "Cherry",
                   "Clementine", "Coconut", "Cranberry", "Fig", "Grape", "Grapefruit",
                   "Kiwi fruit", "Lemon", "Lime", "Lychee", "Mandarine", "Mango",
@@ -24,11 +27,11 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
         placesTableView.delegate=self
         placesTableView.dataSource=self
         
-        loadArray()
-        // Do any additional setup after loading the view.
+        loadArray(typeInp:typeInput,locationInp:locationInput)
+        
     }
-    func loadArray(){
-        FSH.search(location: locationManager.location!) { (returnedPlaces) in
+    func loadArray(typeInp:String,locationInp:String){
+        FSH.search(type:typeInp,location: locationInput) { (returnedPlaces) in
             DispatchQueue.main.async() { () -> Void in
             self.places=returnedPlaces
                     self.placesTableView.reloadData()
