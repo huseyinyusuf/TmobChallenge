@@ -9,6 +9,7 @@
 import UIKit
 import CoreLocation
 let FSH=FSHelper()
+
 class MainPageViewController: UIViewController,UITextFieldDelegate{
 
     @IBOutlet weak var searchButton: UIView!
@@ -39,12 +40,21 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
         
     }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        var letters = NSCharacterSet.letters
+        letters.insert(charactersIn: " ")
         if identifier == "PlacesSague"{
-            if (typeTextField.text?.characters.count)! >= 3{
-                return true
-            }else{
-                popAlertDialog()
+            if (typeTextField.text?.rangeOfCharacter(from: letters.inverted) != nil || (locationTextField.text?.rangeOfCharacter(from: letters.inverted)) != nil) {
+                
+                popOnlyCharacterAlert()
                 return false
+
+            }else{
+                if (typeTextField.text?.characters.count)! >= 3{
+                    return true
+                }else{
+                    popInvalidInputAlertDialog()
+                    return false
+                }
             }
         }
         return false
@@ -60,11 +70,23 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
                         nextViewController.locationInput=locationTextField.text!
                     }
                 }else{
-                    popAlertDialog()
+                    popInvalidInputAlertDialog()
                 }
         }
     }
-    func popAlertDialog(){
+    func popOnlyCharacterAlert(){
+        let alert=UIAlertController(
+            title: "Input Error",
+            message: "Please use ONLY Characters for Area Type and Location inputs",
+            preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(
+            title: "Done",
+            style: UIAlertActionStyle.destructive,handler:{ (UIAlertAction) in
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    func popInvalidInputAlertDialog(){
         let alert=UIAlertController(
             title: "Input Error",
             message: "Are type must consist minimum 3 Characters",
@@ -76,15 +98,8 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
         }))
         self.present(alert, animated: true, completion: nil)
     }
-    /*func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-        let set = NSCharacterSet(charactersIn: "ABCDEFGHIJKLMONPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ").inverted
-        let stringSet : String = string as String
-        return stringSet.rangeOfCharacter(from: set.inverted, options: String.CompareOptions.caseInsensitive) == nil
-        
-    }
-    */
-    override func didReceiveMemoryWarning() {
+    
+       override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
