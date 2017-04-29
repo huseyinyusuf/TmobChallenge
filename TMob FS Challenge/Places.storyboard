@@ -21,9 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YoU-fr-ULJ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YoU-fr-ULJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Place" rowHeight="96" id="wYt-UD-YQi" customClass="PlaceTableViewCell" customModule="TMob_FS_Challenge" customModuleProvider="target">
@@ -67,6 +66,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YoU-fr-ULJ" firstAttribute="leading" secondItem="nFk-WJ-Ee4" secondAttribute="leading" id="K1A-MK-jwl"/>
+                            <constraint firstItem="Odx-yv-CxL" firstAttribute="top" secondItem="YoU-fr-ULJ" secondAttribute="bottom" id="SQt-LE-Arv"/>
+                            <constraint firstAttribute="trailing" secondItem="YoU-fr-ULJ" secondAttribute="trailing" id="ToC-oC-D18"/>
+                            <constraint firstItem="YoU-fr-ULJ" firstAttribute="top" secondItem="nFk-WJ-Ee4" secondAttribute="top" id="o0F-as-P53"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="placesTableView" destination="YoU-fr-ULJ" id="H3b-5b-8WG"/>

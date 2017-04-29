@@ -24,6 +24,25 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S11-xZ-AbI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnP-Bm-lRv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5P-bd-Fz7">
+                                                <rect key="frame" x="40" y="74" width="294" height="518"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="W5P-bd-Fz7" firstAttribute="centerY" secondItem="gnP-Bm-lRv" secondAttribute="centerY" id="CTg-Tw-juX"/>
+                                            <constraint firstItem="W5P-bd-Fz7" firstAttribute="leading" secondItem="gnP-Bm-lRv" secondAttribute="leading" constant="40" id="F2F-er-P9S"/>
+                                            <constraint firstItem="W5P-bd-Fz7" firstAttribute="top" secondItem="gnP-Bm-lRv" secondAttribute="top" constant="74" id="fsE-xL-QaO"/>
+                                            <constraint firstItem="W5P-bd-Fz7" firstAttribute="centerX" secondItem="gnP-Bm-lRv" secondAttribute="centerX" id="iRN-VH-qz4"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="i8V-Ku-CkG" appends="YES" id="VaP-g7-5PF"/>
+                                        </connections>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jiy-Cl-hl1">
                                         <rect key="frame" x="40" y="74" width="294" height="518"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -31,14 +50,17 @@
                                 </subviews>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstItem="gnP-Bm-lRv" firstAttribute="height" secondItem="S11-xZ-AbI" secondAttribute="height" id="2i3-jq-1li"/>
                                     <constraint firstItem="Jiy-Cl-hl1" firstAttribute="centerX" secondItem="S11-xZ-AbI" secondAttribute="centerX" id="6tc-bL-qmB"/>
                                     <constraint firstItem="Jiy-Cl-hl1" firstAttribute="leading" secondItem="S11-xZ-AbI" secondAttribute="leading" constant="40" id="KjF-MY-7rz"/>
+                                    <constraint firstItem="gnP-Bm-lRv" firstAttribute="width" secondItem="S11-xZ-AbI" secondAttribute="width" id="NkD-1F-r9g"/>
+                                    <constraint firstItem="gnP-Bm-lRv" firstAttribute="leading" secondItem="S11-xZ-AbI" secondAttribute="leading" id="QWJ-3P-Su1"/>
                                     <constraint firstItem="Jiy-Cl-hl1" firstAttribute="top" secondItem="S11-xZ-AbI" secondAttribute="top" constant="74" id="TRK-dm-iAo"/>
+                                    <constraint firstItem="gnP-Bm-lRv" firstAttribute="centerY" secondItem="Jiy-Cl-hl1" secondAttribute="centerY" id="U5V-N8-Ipy"/>
+                                    <constraint firstItem="gnP-Bm-lRv" firstAttribute="top" secondItem="S11-xZ-AbI" secondAttribute="top" id="cn9-nE-TzF"/>
                                     <constraint firstItem="Jiy-Cl-hl1" firstAttribute="centerY" secondItem="S11-xZ-AbI" secondAttribute="centerY" id="kjW-6Y-zYL"/>
+                                    <constraint firstItem="gnP-Bm-lRv" firstAttribute="centerX" secondItem="Jiy-Cl-hl1" secondAttribute="centerX" id="nsY-nj-5f4"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="EuG-Uz-ORq" appends="YES" id="9aD-iz-cyR"/>
-                                </connections>
                             </view>
                         </subviews>
                         <gestureRecognizers/>
@@ -54,9 +76,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25P-OD-7UN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="EuG-Uz-ORq">
+                <tapGestureRecognizer id="i8V-Ku-CkG">
                     <connections>
-                        <action selector="BackgroundClicked:" destination="f4d-74-CMh" id="VA9-K7-5DD"/>
+                        <action selector="BackgroundClicked:" destination="f4d-74-CMh" id="Z9L-D0-iLW"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

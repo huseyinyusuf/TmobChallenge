@@ -129,8 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				1D1F8D7C1EB3A16B00AD82F9 /* Main.storyboard */,
-				1D4F7F2B1EB3D23900F58C8A /* launchScreen.storyboard */,
 				1D4F7F291EB3D1F500F58C8A /* Places.storyboard */,
+				1D4F7F2B1EB3D23900F58C8A /* launchScreen.storyboard */,
 				1D4F7F341EB3E36300F58C8A /* PlaceDetailPopUp.storyboard */,
 			);
 			name = Storyboards;

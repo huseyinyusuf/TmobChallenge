@@ -16,11 +16,6 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
     var locationInput=""
     let locationManager=CLLocationManager()
     var currentlocation=CLLocation()
-    var fruits = ["Apple", "Apricot", "Banana", "Blueberry", "Cantaloupe", "Cherry",
-                  "Clementine", "Coconut", "Cranberry", "Fig", "Grape", "Grapefruit",
-                  "Kiwi fruit", "Lemon", "Lime", "Lychee", "Mandarine", "Mango",
-                  "Melon", "Nectarine", "Olive", "Orange", "Papaya", "Peach",
-                  "Pear", "Pineapple", "Raspberry", "Strawberry"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +29,7 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
         FSH.search(type:typeInp,location: locationInput) { (returnedPlaces) in
             DispatchQueue.main.async() { () -> Void in
             self.places=returnedPlaces
-                    self.placesTableView.reloadData()
+                self.placesTableView.reloadData()
             //            if self.places.isEmpty==false{
             //                self.performSegue(withIdentifier: "PlacesSague", sender: self)
             //            }
@@ -58,6 +53,9 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
         cell.placeAdress.text = places[indexPath.row].adress
         cell.country.text = places[indexPath.row].country
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
     }
 
 }
