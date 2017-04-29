@@ -21,6 +21,8 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
         areaTextField.delegate=self
         locationTextField.delegate=self
         getLocation()
+        let FSH=FSHelper()
+        FSH.search(location:locationManager.location!)
         
     }
     public func getLocation(){

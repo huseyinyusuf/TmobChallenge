@@ -17,8 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 //        let locationManager=CLLocationManager()
 //        locationManager.requestWhenInUseAuthorization()
-        let FSH=FSHelper()
-        FSH.setupSession()
         return true
     }
 
