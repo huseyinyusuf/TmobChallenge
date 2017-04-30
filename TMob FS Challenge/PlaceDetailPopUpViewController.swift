@@ -11,7 +11,9 @@ import UIKit
 class PlaceDetailPopUpViewController: UIViewController {
     @IBOutlet weak var venueImage: UIImageView!
     @IBOutlet weak var popUpView: UIView!
+    @IBOutlet weak var venueNameLabel: UILabel!
     var imageUrl=""
+    var venueName=""
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor=UIColor.black.withAlphaComponent(0.6)
@@ -21,7 +23,7 @@ class PlaceDetailPopUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-        print(imageUrl)
+        venueNameLabel.text=venueName
         let Url=URL(string: imageUrl)
         FSH.session?.downloadImageAtURL(Url!) {
             (imageData, error) -> Void in

@@ -62,6 +62,7 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
             if let nextViewController = segue.destination as? PlaceDetailPopUpViewController{
                 if let indexPath = placesTableView.indexPathForSelectedRow{
                     nextViewController.imageUrl=places[indexPath.row].url
+                    nextViewController.venueName=places[indexPath.row].name
                 }
             }
         }

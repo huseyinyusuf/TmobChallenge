@@ -28,11 +28,22 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="us7-fx-L76">
                                         <rect key="frame" x="0.0" y="0.0" width="294" height="518"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skx-pT-gap">
+                                        <rect key="frame" x="126" y="105" width="42" height="21"/>
+                                        <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="skx-pT-gap" firstAttribute="centerX" secondItem="Jiy-Cl-hl1" secondAttribute="centerX" id="Dh4-VZ-ZmC"/>
                                     <constraint firstItem="us7-fx-L76" firstAttribute="centerY" secondItem="Jiy-Cl-hl1" secondAttribute="centerY" id="FWm-gT-mQY"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="skx-pT-gap" secondAttribute="trailing" constant="50" id="OQG-qS-A8J"/>
                                     <constraint firstItem="us7-fx-L76" firstAttribute="centerX" secondItem="Jiy-Cl-hl1" secondAttribute="centerX" id="OVR-D3-Pke"/>
+                                    <constraint firstItem="skx-pT-gap" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Jiy-Cl-hl1" secondAttribute="leading" constant="50" id="ZAv-Te-e4y"/>
+                                    <constraint firstItem="skx-pT-gap" firstAttribute="centerY" secondItem="Jiy-Cl-hl1" secondAttribute="centerY" constant="-143" id="fyV-bE-gvp"/>
                                     <constraint firstItem="us7-fx-L76" firstAttribute="width" secondItem="Jiy-Cl-hl1" secondAttribute="width" id="oS2-ul-3VT"/>
                                     <constraint firstItem="us7-fx-L76" firstAttribute="height" secondItem="Jiy-Cl-hl1" secondAttribute="height" id="zba-1K-CAD"/>
                                 </constraints>
@@ -49,6 +60,7 @@
                     <connections>
                         <outlet property="popUpView" destination="Jiy-Cl-hl1" id="J82-bh-J4O"/>
                         <outlet property="venueImage" destination="us7-fx-L76" id="aSe-Ga-BcY"/>
+                        <outlet property="venueNameLabel" destination="skx-pT-gap" id="XPL-EZ-A0X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25P-OD-7UN" userLabel="First Responder" sceneMemberID="firstResponder"/>
