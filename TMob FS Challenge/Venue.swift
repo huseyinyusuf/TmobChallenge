@@ -12,4 +12,5 @@ class Venue{
     var adress:String = ""
     var id:String = ""
     var country = ""
+    var url = ""
 }

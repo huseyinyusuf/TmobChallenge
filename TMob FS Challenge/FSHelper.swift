@@ -30,7 +30,7 @@ class FSHelper{
         var places=[Venue]()
         if let session = self.session
         {
-            var locationmanager=CLLocationManager()
+            let locationmanager=CLLocationManager()
             var parameters = [Parameter.query:type]
             if location=="empty"{
                 parameters += locationmanager.location?.parameters()
@@ -58,8 +58,7 @@ class FSHelper{
                             {
                                 place.name = name
                             }
-                            
-                            if  let location = venue["location"] as? [String: AnyObject]
+                            if  let location = venue["location"] as? NSDictionary
                             {
                                 if let address = location["address"] as? String
                                 {
@@ -76,10 +75,12 @@ class FSHelper{
                             }
                             
 //                            print(response)
-                            print(place.name)
-//                            print(place.adress)
-//                            print(place.id)
-//                            print("\n")
+                            self.getphotoUrl(id: place.id, getUrl: { (url) in
+                                place.url=url
+                                
+//                                print(place.name)
+//                                print(place.url)
+                            })
                             places.append(place)
                         }
                         print("finished")
@@ -92,7 +93,38 @@ class FSHelper{
         }
     }
 
+    func getphotoUrl(id:String,getUrl: @escaping (_ url: String)-> Void){
+        if let session = self.session
+        {
+            let parameters = [Parameter.limit:"1"]
+            let photoUrltask = session.venues.photos(id, parameters: parameters)
+            {
+                (result) -> Void in
+                
+                if let response = result.response
+                {
+                    if let photos = response["photos"]
+                    {
+                        if let item = photos["items"] as? NSArray
+                        {
+                            if let itemDetail = item[0] as? NSDictionary{
+                                if let prefix = itemDetail["prefix"] as? String,
+                                    let suffix = itemDetail["suffix"] as? String{
+                                    let Url=prefix+"900x900"+suffix 
+                                    getUrl(Url)
+                                }
+                            }
+                            
+                        }
+                    }
+                    
+                }
+            }
+            photoUrltask.start()
+        }
+    }
 }
+
 extension CLLocation
 {
     func parameters() -> Parameters
