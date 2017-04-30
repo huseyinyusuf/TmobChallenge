@@ -25,12 +25,17 @@
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jiy-Cl-hl1">
                                 <rect key="frame" x="40" y="74" width="294" height="518"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="us7-fx-L76">
-                                        <rect key="frame" x="27" y="55" width="236" height="350"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="us7-fx-L76">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="518"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="us7-fx-L76" firstAttribute="centerY" secondItem="Jiy-Cl-hl1" secondAttribute="centerY" id="FWm-gT-mQY"/>
+                                    <constraint firstItem="us7-fx-L76" firstAttribute="centerX" secondItem="Jiy-Cl-hl1" secondAttribute="centerX" id="OVR-D3-Pke"/>
+                                    <constraint firstItem="us7-fx-L76" firstAttribute="width" secondItem="Jiy-Cl-hl1" secondAttribute="width" id="oS2-ul-3VT"/>
+                                    <constraint firstItem="us7-fx-L76" firstAttribute="height" secondItem="Jiy-Cl-hl1" secondAttribute="height" id="zba-1K-CAD"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <gestureRecognizers/>
