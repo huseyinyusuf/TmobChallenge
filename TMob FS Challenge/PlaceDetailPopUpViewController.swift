@@ -9,6 +9,7 @@
 import UIKit
 
 class PlaceDetailPopUpViewController: UIViewController {
+    @IBOutlet weak var venueImage: UIImageView!
     @IBOutlet weak var popUpView: UIView!
     var imageUrl=""
     override func viewDidLoad() {
@@ -21,6 +22,14 @@ class PlaceDetailPopUpViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         print(imageUrl)
+        let Url=URL(string: imageUrl)
+        FSH.session?.downloadImageAtURL(Url!) {
+            (imageData, error) -> Void in
+            if let imageData = imageData {
+                let image = UIImage(data: imageData)
+                self.venueImage.image=image
+            }
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

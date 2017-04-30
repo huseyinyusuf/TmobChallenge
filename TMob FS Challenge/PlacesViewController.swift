@@ -56,7 +56,16 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
-        print(places[indexPath.row].name)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PlaceDetail"{
+            
+            if let nextViewController = segue.destination as? PlaceDetailPopUpViewController{
+                if let indexPath = placesTableView.indexPathForSelectedRow{
+                    nextViewController.imageUrl=places[indexPath.row].url
+                }
+            }
+        }
+    }
 }

@@ -26,7 +26,7 @@
                                 <rect key="frame" x="40" y="74" width="294" height="518"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="us7-fx-L76">
-                                        <rect key="frame" x="27" y="55" width="236" height="166"/>
+                                        <rect key="frame" x="27" y="55" width="236" height="350"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -43,14 +43,11 @@
                     </view>
                     <connections>
                         <outlet property="popUpView" destination="Jiy-Cl-hl1" id="J82-bh-J4O"/>
+                        <outlet property="venueImage" destination="us7-fx-L76" id="aSe-Ga-BcY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25P-OD-7UN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="i8V-Ku-CkG">
-                    <connections>
-                        <action selector="BackgroundClicked:" destination="f4d-74-CMh" id="Z9L-D0-iLW"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="i8V-Ku-CkG"/>
             </objects>
             <point key="canvasLocation" x="2029.5999999999999" y="654.42278860569718"/>
         </scene>
