@@ -35,13 +35,14 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="294" id="Sly-mw-9Bm"/>
-                                            <constraint firstAttribute="height" constant="518" id="TT9-ih-3bE"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="294" id="Sly-mw-9Bm"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="518" id="TT9-ih-3bE"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstItem="Jiy-Cl-hl1" firstAttribute="top" secondItem="S11-xZ-AbI" secondAttribute="top" constant="74" id="6Cv-CJ-azM"/>
                                     <constraint firstItem="Jiy-Cl-hl1" firstAttribute="centerX" secondItem="S11-xZ-AbI" secondAttribute="centerX" id="Adt-iu-WOm"/>
                                     <constraint firstItem="Jiy-Cl-hl1" firstAttribute="centerY" secondItem="S11-xZ-AbI" secondAttribute="centerY" id="KeY-Ge-MtF"/>
                                     <constraint firstItem="Jiy-Cl-hl1" firstAttribute="width" secondItem="S11-xZ-AbI" secondAttribute="height" multiplier="294:667" id="qVQ-po-Bu3"/>
