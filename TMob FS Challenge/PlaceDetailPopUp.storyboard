@@ -43,22 +43,28 @@
                                             <outletCollection property="gestureRecognizers" destination="i8V-Ku-CkG" appends="YES" id="VaP-g7-5PF"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jiy-Cl-hl1">
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jiy-Cl-hl1">
                                         <rect key="frame" x="40" y="74" width="294" height="518"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="us7-fx-L76">
+                                                <rect key="frame" x="27" y="55" width="236" height="166"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="294" id="Sly-mw-9Bm"/>
+                                            <constraint firstAttribute="height" constant="518" id="TT9-ih-3bE"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="gnP-Bm-lRv" firstAttribute="height" secondItem="S11-xZ-AbI" secondAttribute="height" id="2i3-jq-1li"/>
-                                    <constraint firstItem="Jiy-Cl-hl1" firstAttribute="centerX" secondItem="S11-xZ-AbI" secondAttribute="centerX" id="6tc-bL-qmB"/>
-                                    <constraint firstItem="Jiy-Cl-hl1" firstAttribute="leading" secondItem="S11-xZ-AbI" secondAttribute="leading" constant="40" id="KjF-MY-7rz"/>
                                     <constraint firstItem="gnP-Bm-lRv" firstAttribute="width" secondItem="S11-xZ-AbI" secondAttribute="width" id="NkD-1F-r9g"/>
                                     <constraint firstItem="gnP-Bm-lRv" firstAttribute="leading" secondItem="S11-xZ-AbI" secondAttribute="leading" id="QWJ-3P-Su1"/>
-                                    <constraint firstItem="Jiy-Cl-hl1" firstAttribute="top" secondItem="S11-xZ-AbI" secondAttribute="top" constant="74" id="TRK-dm-iAo"/>
                                     <constraint firstItem="gnP-Bm-lRv" firstAttribute="centerY" secondItem="Jiy-Cl-hl1" secondAttribute="centerY" id="U5V-N8-Ipy"/>
                                     <constraint firstItem="gnP-Bm-lRv" firstAttribute="top" secondItem="S11-xZ-AbI" secondAttribute="top" id="cn9-nE-TzF"/>
-                                    <constraint firstItem="Jiy-Cl-hl1" firstAttribute="centerY" secondItem="S11-xZ-AbI" secondAttribute="centerY" id="kjW-6Y-zYL"/>
                                     <constraint firstItem="gnP-Bm-lRv" firstAttribute="centerX" secondItem="Jiy-Cl-hl1" secondAttribute="centerX" id="nsY-nj-5f4"/>
                                 </constraints>
                             </view>
@@ -72,7 +78,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="popUpView" destination="Jiy-Cl-hl1" id="VnL-sU-qzq"/>
+                        <outlet property="popUpView" destination="Jiy-Cl-hl1" id="J82-bh-J4O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25P-OD-7UN" userLabel="First Responder" sceneMemberID="firstResponder"/>

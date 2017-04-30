@@ -13,10 +13,14 @@ class PlaceDetailPopUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor=UIColor.black.withAlphaComponent(0.6)
+        
+        popUpView.clipsToBounds=true
         popUpView.layer.cornerRadius=12
         // Do any additional setup after loading the view.
     }
-
+//    override func viewWillAppear(_ animated: Bool) {
+//        <#code#>
+//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
