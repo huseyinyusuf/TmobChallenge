@@ -59,7 +59,7 @@
                                             <outlet property="country" destination="u42-ae-Och" id="HF0-XB-QQ0"/>
                                             <outlet property="placeAdress" destination="ool-ZO-8H0" id="nyp-AL-qJh"/>
                                             <outlet property="placeName" destination="2r8-e9-Uhg" id="szi-4e-XK0"/>
-                                            <segue destination="uRk-2k-3xz" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="h7b-HB-ihw"/>
+                                            <segue destination="uRk-2k-3xz" kind="presentation" identifier="PlaceDetail" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="h7b-HB-ihw"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
