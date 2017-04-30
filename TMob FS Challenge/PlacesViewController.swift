@@ -12,8 +12,8 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
 
     @IBOutlet weak var placesTableView: UITableView!
     var places=[Venue]()
-    var typeInput=""
-    var locationInput=""
+    var typeInput="" //segue input
+    var locationInput="" //segue input
     let locationManager=CLLocationManager()
     var currentlocation=CLLocation()
     
@@ -26,6 +26,7 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
         loadArray(typeInp:typeInput,locationInp:locationInput)
         
     }
+    //function to load Table data asychronously
     func loadArray(typeInp:String,locationInp:String){
         FSH.search(type:typeInp,location: locationInput) { (returnedPlaces) in
             DispatchQueue.main.async() { () -> Void in
@@ -38,6 +39,7 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //Table Functions
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -55,7 +57,8 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
     }
-
+    
+    // Make data transfer before Seque is done
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PlaceDetail"{
             

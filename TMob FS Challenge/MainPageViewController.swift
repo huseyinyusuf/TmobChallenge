@@ -25,26 +25,21 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
         locationTextField.delegate=self
         getLocation()
     }
+    //function to get curent location of user and asd for permission
     public func getLocation(){
         self.locationManager.requestWhenInUseAuthorization()
         if( CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedWhenInUse ||
             CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedAlways){
-            
             currentLocation = locationManager.location!
-//            let lat=currentLocation.coordinate.latitude
-//            let long=currentLocation.coordinate.longitude
-//            print(lat)
-//            print(long)
-            
         }
         
     }
+    // Necessary Input Controls are done here and Alerts are popped when required
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         var letters = NSCharacterSet.letters
         letters.insert(charactersIn: " ")
         if identifier == "PlacesSague"{
             if (typeTextField.text?.rangeOfCharacter(from: letters.inverted) != nil || (locationTextField.text?.rangeOfCharacter(from: letters.inverted)) != nil) {
-                
                 popOnlyCharacterAlert()
                 return false
 
@@ -59,6 +54,7 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
         }
         return false
     }
+    //Data transfer is done here
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PlacesSague"{
             
@@ -74,6 +70,7 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
                 }
         }
     }
+    // Alert for only character input
     func popOnlyCharacterAlert(){
         let alert=UIAlertController(
             title: "Input Error",
@@ -86,6 +83,7 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
         }))
         self.present(alert, animated: true, completion: nil)
     }
+    // Alert for Invalid Input
     func popInvalidInputAlertDialog(){
         let alert=UIAlertController(
             title: "Input Error",
@@ -103,6 +101,7 @@ class MainPageViewController: UIViewController,UITextFieldDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //Disabling the keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         }

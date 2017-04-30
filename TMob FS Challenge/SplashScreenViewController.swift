@@ -12,7 +12,7 @@ class SplashScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Method to delay splashcreen 2 seconds before start
         perform(#selector(SplashScreenViewController.SplashScreenDelay),with:nil,afterDelay:2)
     }
 

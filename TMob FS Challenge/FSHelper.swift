@@ -17,7 +17,7 @@ class FSHelper{
     var session:Session?
     var ClientId="GAST5RT2DZB5CZUXJHT0GXIYXI5MUHMIHLPIAPIVJODOVU2K"
     var ClientSecret="VOPLNSCFS52Z05LMGCMATN40MZOHD2HS44K3WUVBIHUJ3BMB"
-    init(){
+    init(){ //Constructor
         let client = Client(clientID: ClientId,
                             clientSecret: ClientSecret,
                             redirectURL: "https://www.FSChallengeByTMob.com")
@@ -26,20 +26,21 @@ class FSHelper{
         self.session=Session.sharedSession()
         print("Session Created!")
     }
+    // function to search venues from JSON
     func search(type:String,location:String,getPlaces: @escaping (_ array: [Venue])-> Void){
         var places=[Venue]()
         if let session = self.session
         {
             let locationmanager=CLLocationManager()
             var parameters = [Parameter.query:type]
-            if location=="empty"{
+            if location=="empty"{ //check if the palce attribute is given
                 parameters += locationmanager.location?.parameters()
             }else{
                 parameters += [Parameter.near:location]
             }
             parameters += [Parameter.categoryId: "4bf58dd8d48988d1e0931735"]
-            parameters += [Parameter.radius: "10000"]
-            parameters += [Parameter.limit: "15"]
+            parameters += [Parameter.radius: "10000"] //limit radius to 10000
+            parameters += [Parameter.limit: "15"] //limit the query as first 15 places
             
             let searchTask = session.venues.search(parameters)
             {
@@ -73,13 +74,9 @@ class FSHelper{
                             {
                                 place.id = id
                             }
-                            
-//                            print(response)
+
                             self.getphotoUrl(id: place.id, getUrl: { (url) in
                                 place.url=url
-                                
-//                                print(place.name)
-//                                print(place.url)
                             })
                             places.append(place)
                         }
@@ -92,7 +89,7 @@ class FSHelper{
             searchTask.start()
         }
     }
-
+    // fuction to return Venue URL in desired format by using Venue_ID
     func getphotoUrl(id:String,getUrl: @escaping (_ url: String)-> Void){
         if let session = self.session
         {
@@ -107,7 +104,7 @@ class FSHelper{
                     {
                         if let item = photos["items"] as? NSArray
                         {
-                            // to check if there esixt photo or nor
+                            // to check if there esist photo or not
                             if item.count==0{
                                 return
                             }
@@ -129,7 +126,7 @@ class FSHelper{
     }
 }
 
-extension CLLocation
+extension CLLocation //extension required to adapt CLLocation parameters into FourSquare Api format
 {
     func parameters() -> Parameters
     {
