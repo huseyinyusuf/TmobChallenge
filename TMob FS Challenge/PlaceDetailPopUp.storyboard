@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,43 +22,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S11-xZ-AbI">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jiy-Cl-hl1">
+                                <rect key="frame" x="40" y="74" width="294" height="518"/>
                                 <subviews>
-                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jiy-Cl-hl1">
-                                        <rect key="frame" x="40" y="74" width="294" height="518"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="us7-fx-L76">
-                                                <rect key="frame" x="27" y="55" width="236" height="166"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="294" id="Sly-mw-9Bm"/>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="518" id="TT9-ih-3bE"/>
-                                        </constraints>
-                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="us7-fx-L76">
+                                        <rect key="frame" x="27" y="55" width="236" height="166"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
-                                <gestureRecognizers/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Jiy-Cl-hl1" firstAttribute="top" secondItem="S11-xZ-AbI" secondAttribute="top" constant="74" id="6Cv-CJ-azM"/>
-                                    <constraint firstItem="Jiy-Cl-hl1" firstAttribute="centerX" secondItem="S11-xZ-AbI" secondAttribute="centerX" id="Adt-iu-WOm"/>
-                                    <constraint firstItem="Jiy-Cl-hl1" firstAttribute="centerY" secondItem="S11-xZ-AbI" secondAttribute="centerY" id="KeY-Ge-MtF"/>
-                                    <constraint firstItem="Jiy-Cl-hl1" firstAttribute="width" secondItem="S11-xZ-AbI" secondAttribute="height" multiplier="294:667" id="qVQ-po-Bu3"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="294" id="Sly-mw-9Bm"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="518" id="TT9-ih-3bE"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="S11-xZ-AbI" secondAttribute="trailing" id="35P-ey-7yX"/>
-                            <constraint firstItem="S11-xZ-AbI" firstAttribute="width" secondItem="gCq-h2-Ttu" secondAttribute="width" id="4c1-i1-r2C"/>
-                            <constraint firstItem="S11-xZ-AbI" firstAttribute="centerX" secondItem="gCq-h2-Ttu" secondAttribute="centerX" id="8jZ-5y-145"/>
-                            <constraint firstItem="S11-xZ-AbI" firstAttribute="leading" secondItem="gCq-h2-Ttu" secondAttribute="leading" id="Ehv-dw-Pmp"/>
-                            <constraint firstItem="S11-xZ-AbI" firstAttribute="centerY" secondItem="gCq-h2-Ttu" secondAttribute="centerY" id="KNq-Vd-NWL"/>
-                            <constraint firstItem="zJP-da-mj9" firstAttribute="top" secondItem="S11-xZ-AbI" secondAttribute="bottom" id="YIJ-Dp-9q1"/>
-                            <constraint firstItem="S11-xZ-AbI" firstAttribute="top" secondItem="gCq-h2-Ttu" secondAttribute="top" id="aWM-Eh-TWS"/>
-                            <constraint firstItem="S11-xZ-AbI" firstAttribute="height" secondItem="gCq-h2-Ttu" secondAttribute="height" id="gDh-Y8-30V"/>
+                            <constraint firstItem="Jiy-Cl-hl1" firstAttribute="centerX" secondItem="gCq-h2-Ttu" secondAttribute="centerX" id="69T-Cc-tVz"/>
+                            <constraint firstItem="Jiy-Cl-hl1" firstAttribute="top" secondItem="fQF-DZ-QDO" secondAttribute="bottom" constant="54" id="L05-Pk-HuA"/>
+                            <constraint firstItem="Jiy-Cl-hl1" firstAttribute="leading" secondItem="gCq-h2-Ttu" secondAttribute="leadingMargin" constant="24" id="PRD-ne-RuK"/>
+                            <constraint firstItem="Jiy-Cl-hl1" firstAttribute="centerY" secondItem="gCq-h2-Ttu" secondAttribute="centerY" id="eGE-um-Ul5"/>
                         </constraints>
                     </view>
                     <connections>

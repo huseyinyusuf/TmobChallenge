@@ -13,7 +13,7 @@ class PlaceDetailPopUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor=UIColor.black.withAlphaComponent(0.6)
-        
+        popUpView.tag=1;
         popUpView.clipsToBounds=true
         popUpView.layer.cornerRadius=20
         // Do any additional setup after loading the view.
@@ -25,7 +25,12 @@ class PlaceDetailPopUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func BackgroundClicked(_ sender: UITapGestureRecognizer) {
-        self.dismiss(animated: true, completion:{})
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            if touch.view != popUpView{
+                self.dismiss(animated: true, completion:{})
+            }
+        }
     }
+
 }
