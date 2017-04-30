@@ -15,7 +15,7 @@ class PlaceDetailPopUpViewController: UIViewController {
         view.backgroundColor=UIColor.black.withAlphaComponent(0.6)
         
         popUpView.clipsToBounds=true
-        popUpView.layer.cornerRadius=12
+        popUpView.layer.cornerRadius=20
         // Do any additional setup after loading the view.
     }
 //    override func viewWillAppear(_ animated: Bool) {

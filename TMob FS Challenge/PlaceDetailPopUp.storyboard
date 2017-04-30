@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,25 +25,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S11-xZ-AbI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnP-Bm-lRv">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5P-bd-Fz7">
-                                                <rect key="frame" x="40" y="74" width="294" height="518"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            </view>
-                                        </subviews>
-                                        <gestureRecognizers/>
-                                        <constraints>
-                                            <constraint firstItem="W5P-bd-Fz7" firstAttribute="centerY" secondItem="gnP-Bm-lRv" secondAttribute="centerY" id="CTg-Tw-juX"/>
-                                            <constraint firstItem="W5P-bd-Fz7" firstAttribute="leading" secondItem="gnP-Bm-lRv" secondAttribute="leading" constant="40" id="F2F-er-P9S"/>
-                                            <constraint firstItem="W5P-bd-Fz7" firstAttribute="top" secondItem="gnP-Bm-lRv" secondAttribute="top" constant="74" id="fsE-xL-QaO"/>
-                                            <constraint firstItem="W5P-bd-Fz7" firstAttribute="centerX" secondItem="gnP-Bm-lRv" secondAttribute="centerX" id="iRN-VH-qz4"/>
-                                        </constraints>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="i8V-Ku-CkG" appends="YES" id="VaP-g7-5PF"/>
-                                        </connections>
-                                    </view>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jiy-Cl-hl1">
                                         <rect key="frame" x="40" y="74" width="294" height="518"/>
                                         <subviews>
@@ -60,21 +42,22 @@
                                 </subviews>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstItem="gnP-Bm-lRv" firstAttribute="height" secondItem="S11-xZ-AbI" secondAttribute="height" id="2i3-jq-1li"/>
-                                    <constraint firstItem="gnP-Bm-lRv" firstAttribute="width" secondItem="S11-xZ-AbI" secondAttribute="width" id="NkD-1F-r9g"/>
-                                    <constraint firstItem="gnP-Bm-lRv" firstAttribute="leading" secondItem="S11-xZ-AbI" secondAttribute="leading" id="QWJ-3P-Su1"/>
-                                    <constraint firstItem="gnP-Bm-lRv" firstAttribute="centerY" secondItem="Jiy-Cl-hl1" secondAttribute="centerY" id="U5V-N8-Ipy"/>
-                                    <constraint firstItem="gnP-Bm-lRv" firstAttribute="top" secondItem="S11-xZ-AbI" secondAttribute="top" id="cn9-nE-TzF"/>
-                                    <constraint firstItem="gnP-Bm-lRv" firstAttribute="centerX" secondItem="Jiy-Cl-hl1" secondAttribute="centerX" id="nsY-nj-5f4"/>
+                                    <constraint firstItem="Jiy-Cl-hl1" firstAttribute="centerX" secondItem="S11-xZ-AbI" secondAttribute="centerX" id="Adt-iu-WOm"/>
+                                    <constraint firstItem="Jiy-Cl-hl1" firstAttribute="centerY" secondItem="S11-xZ-AbI" secondAttribute="centerY" id="KeY-Ge-MtF"/>
+                                    <constraint firstItem="Jiy-Cl-hl1" firstAttribute="width" secondItem="S11-xZ-AbI" secondAttribute="height" multiplier="294:667" id="qVQ-po-Bu3"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="S11-xZ-AbI" secondAttribute="trailing" id="35P-ey-7yX"/>
+                            <constraint firstItem="S11-xZ-AbI" firstAttribute="width" secondItem="gCq-h2-Ttu" secondAttribute="width" id="4c1-i1-r2C"/>
+                            <constraint firstItem="S11-xZ-AbI" firstAttribute="centerX" secondItem="gCq-h2-Ttu" secondAttribute="centerX" id="8jZ-5y-145"/>
                             <constraint firstItem="S11-xZ-AbI" firstAttribute="leading" secondItem="gCq-h2-Ttu" secondAttribute="leading" id="Ehv-dw-Pmp"/>
+                            <constraint firstItem="S11-xZ-AbI" firstAttribute="centerY" secondItem="gCq-h2-Ttu" secondAttribute="centerY" id="KNq-Vd-NWL"/>
                             <constraint firstItem="zJP-da-mj9" firstAttribute="top" secondItem="S11-xZ-AbI" secondAttribute="bottom" id="YIJ-Dp-9q1"/>
                             <constraint firstItem="S11-xZ-AbI" firstAttribute="top" secondItem="gCq-h2-Ttu" secondAttribute="top" id="aWM-Eh-TWS"/>
+                            <constraint firstItem="S11-xZ-AbI" firstAttribute="height" secondItem="gCq-h2-Ttu" secondAttribute="height" id="gDh-Y8-30V"/>
                         </constraints>
                     </view>
                     <connections>
