@@ -21,7 +21,8 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
         placesTableView.delegate=self
         placesTableView.dataSource=self
-        
+        placesTableView.rowHeight = UITableViewAutomaticDimension
+        placesTableView.estimatedRowHeight = 50
         loadArray(typeInp:typeInput,locationInp:locationInput)
         
     }
@@ -30,9 +31,6 @@ class PlacesViewController: UIViewController, UITableViewDataSource, UITableView
             DispatchQueue.main.async() { () -> Void in
             self.places=returnedPlaces
                 self.placesTableView.reloadData()
-            //            if self.places.isEmpty==false{
-            //                self.performSegue(withIdentifier: "PlacesSague", sender: self)
-            //            }
             }
         }
     }

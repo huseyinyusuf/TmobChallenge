@@ -107,6 +107,10 @@ class FSHelper{
                     {
                         if let item = photos["items"] as? NSArray
                         {
+                            // to check if there esixt photo or nor
+                            if item.count==0{
+                                return
+                            }
                             if let itemDetail = item[0] as? NSDictionary{
                                 if let prefix = itemDetail["prefix"] as? String,
                                     let suffix = itemDetail["suffix"] as? String{
